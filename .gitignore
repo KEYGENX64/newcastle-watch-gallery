@@ -1,0 +1,45 @@
+# =========================================================
+# OS / Editor
+# =========================================================
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+
+# =========================================================
+# Backend / Laravel
+# =========================================================
+backend/.env
+backend/.env.backup
+backend/.env.production
+backend/vendor/
+backend/node_modules/
+backend/public/hot
+backend/public/storage
+backend/storage/*.key
+backend/storage/logs/*.log
+backend/storage/debugbar/*
+backend/bootstrap/cache/*.php
+backend/.phpunit.result.cache
+backend/storage/framework/cache/data/*
+backend/storage/framework/sessions/*
+backend/storage/framework/views/*
+
+# =========================================================
+# Frontend / Angular
+# =========================================================
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+frontend/coverage/
+frontend/.sass-cache/
+frontend/.cache/
+
+# =========================================================
+# Archives
+# =========================================================
+*.zip
+*.tar
+*.gz
+*.rar

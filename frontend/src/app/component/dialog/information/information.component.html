@@ -1,0 +1,12 @@
+<ng-container *transloco="let t">
+    <h2 mat-dialog-title class="text-start">{{ t(data.title) }}</h2>
+    <mat-dialog-content [dir]="currentDirection" class="text-start">
+        {{ t(data.message) }}
+    </mat-dialog-content>
+    <mat-dialog-actions [dir]="currentDirection">
+        <div class="flex w-full justify-end">
+            <button mat-button mat-dialog-close>{{t("Btn.Submit")}}</button>
+
+        </div>
+    </mat-dialog-actions>
+</ng-container>

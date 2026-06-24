@@ -1,0 +1,79 @@
+<ng-container *transloco="let t">
+    <div class="flex min-w-0 flex-auto flex-col items-center sm:justify-center">
+        <div class="w-full px-4 py-8 sm:bg-card sm:w-auto sm:rounded-2xl sm:p-12 sm:shadow">
+            <div class="mx-auto w-full max-w-80 sm:mx-0 sm:w-80">
+                <!-- Logo -->
+                <div class="mx-auto w-12">
+                    <img src="images/logo/logo.png" />
+                </div>
+
+                <!-- Title -->
+                <div class="mt-8 text-center text-3xl font-extrabold leading-tight tracking-tight">
+                    {{t("SignOut.Title")}}
+                </div>
+                <div class="mt-2 flex justify-center font-medium">
+                    <!-- Redirect countdown -->
+                    @if (countdown > 0) {
+                    {{t("SignOut.Redirecting")}}
+                    {{ countdown }}
+                    {{ countdown === 1 ? t("SignOut.Second") : t("SignOut.Seconds") }}
+                    }
+
+                    <!-- Redirect message -->
+                    @if (countdown === 0) {
+                    {{t("SignOut.Redirected")}}
+                    }
+                </div>
+
+                <!-- Form footer -->
+                <div class="text-secondary mt-8 text-center text-md font-medium">
+                    <span>{{t("SignOut.Go")}}</span>
+                    <a class="ms-1 text-primary-500 hover:underline" [routerLink]="['/sign-in']">
+                        {{t("SignOut.Link")}}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-container>
+
+<!-- <div class="flex min-w-0 flex-auto flex-col items-center sm:justify-center">
+    <div
+        class="w-full px-4 py-8 sm:bg-card sm:w-auto sm:rounded-2xl sm:p-12 sm:shadow"
+    >
+        <div class="mx-auto w-full max-w-80 sm:mx-0 sm:w-80">
+            <div class="mx-auto w-12">
+                <img src="images/logo/logo.png" />
+            </div>
+
+            <div
+                class="mt-8 text-center text-4xl font-extrabold leading-tight tracking-tight"
+            >
+                You have signed out!
+                {{t("SignOut.Title")}}
+            </div>
+            <div class="mt-0.5 flex justify-center font-medium">
+                @if (countdown > 0) {
+                    Redirecting in
+                     {{t("SignOut.Redirecting")}}
+                    {{ countdown | i18nPlural: countdownMapping }}
+                }
+
+                @if (countdown === 0) {
+                    You are now being redirected!
+                      {{t("SignOut.Redirected")}}
+                }
+            </div>
+
+            <div class="text-secondary mt-8 text-center text-md font-medium">
+                <span>Go to {{t("SignOut.Go")}}</span>
+                <a
+                    class="ml-1 text-primary-500 hover:underline"
+                    [routerLink]="['/sign-in']"
+                    >sign in
+                     {{t("SignOut.Link")}}
+                </a>
+            </div>
+        </div>
+    </div>
+</div> -->

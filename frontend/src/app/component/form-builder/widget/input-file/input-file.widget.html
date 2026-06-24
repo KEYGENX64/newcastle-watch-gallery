@@ -1,0 +1,56 @@
+<ng-container *transloco="let t">
+    <div class="flex flex-col w-full">
+
+        <label class="text-sm font-medium text-gray-600 dark:text-gray-300 mb-1">
+            {{_widgetConfig.label ? _widgetConfig.label : t('Form.Field.' + _widgetConfig.name)}}
+        </label>
+
+        <div class="relative flex flex-col items-center justify-center w-full min-h-[160px] border-2 border-dashed rounded-lg cursor-pointer transition-colors"
+            [class.border-primary]="isDragOver"
+            [class.border-gray-300]="!isDragOver"
+            [class.bg-gray-50]="!isDragOver"
+            (click)="fileInput.click()"
+            (dragover)="onDragOver($event)"
+            (dragleave)="onDragLeave()"
+            (drop)="onDrop($event)">
+
+            <input #fileInput type="file" class="hidden"
+                [accept]="_widgetConfig.accept || ''"
+                (change)="onFileSelected($event)">
+
+            <ng-container *ngIf="previewUrl && isImage; else noImage">
+                <img [src]="previewUrl" class="max-h-36 rounded object-contain" alt="preview">
+            </ng-container>
+            <ng-template #noImage>
+                <ng-container *ngIf="fileName; else emptyState">
+                    <div class="flex items-center gap-2 text-gray-700">
+                        <mat-icon class="icon-size-6" svgIcon="heroicons_outline:document"></mat-icon>
+                        <span class="text-sm">{{fileName}}</span>
+                    </div>
+                </ng-container>
+            </ng-template>
+            <ng-template #emptyState>
+                <div class="flex flex-col items-center gap-2 text-gray-400">
+                    <mat-icon class="icon-size-8" svgIcon="heroicons_outline:arrow-up-tray"></mat-icon>
+                    <span class="text-sm">{{t('Form.Field.uploadHint')}}</span>
+                </div>
+            </ng-template>
+
+            <button *ngIf="fileName" type="button" mat-icon-button class="absolute top-1 right-1"
+                (click)="removeFile($event)">
+                <mat-icon class="icon-size-4" svgIcon="heroicons_outline:x-mark"></mat-icon>
+            </button>
+        </div>
+
+        <p class="text-xs text-red-600 mt-1" *ngIf="_formControl && _formControl.touched && _formControl.hasError('required')">
+            {{ t('Form.Validation.required') }}
+        </p>
+        <p class="text-xs text-red-600 mt-1" *ngIf="_formControl && _formControl.touched && _formControl.hasError('invalidFileType')">
+            {{ t('Form.Validation.invalidFileType') }}
+        </p>
+        <p class="text-xs text-red-600 mt-1" *ngIf="_formControl && _formControl.touched && _formControl.hasError('fileTooLarge')">
+            {{ t('Form.Validation.fileTooLarge', { maxFileSizeMb: _formControl.getError('fileTooLarge')?.maxFileSizeMb }) }}
+        </p>
+
+    </div>
+</ng-container>

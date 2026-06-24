@@ -1,0 +1,765 @@
+{
+    "Paginator": {
+        "ItemsPerPageLabel": "Items per page",
+        "FirstPageLabel": "first page",
+        "LastPageLabel": "last page",
+        "NextPageLabel": "next page",
+        "PreviousPageLabel": "previous page",
+        "RangeLabel": "{{startIndex}} from {{endIndex}} to {{length}}",
+        "Empty": "{{startIndex}} of {{length}}"
+    },
+    "JalaliMonths": {
+        "1": "Farvardin",
+        "2": "Ordibehesht",
+        "3": "Khordad",
+        "4": "Tir",
+        "5": "Mordad",
+        "6": "Shahrivar",
+        "7": "Mehr",
+        "8": "Aban",
+        "9": "Azar",
+        "10": "Dey",
+        "11": "Bahman",
+        "12": "Esfand"
+    },
+    "GregorianMonths": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+    },
+    "Menu": {
+        "Lang": "Software Language",
+        "FullScreen": "Toggle Fullscreen",
+        "ExitFullScreen": "Exit Fullscreen",
+        "User": {
+            "Tooltip": "User Account",
+            "SignIn": "Signed in as",
+            "Profile": "Profile",
+            "ChangePassword": "Change Password",
+            "Setting": "Setting",
+            "SignOut": "Sign Out"
+        },
+        "Ticket": {
+            "Tooltip": "Tickets",
+            "Title": "Support Tickets",
+            "Select": "Select a ticket"
+        },
+        "Messages": {
+            "Tooltip": "Messages",
+            "Title": "Messages",
+            "NoMessages": "No messages",
+            "NoMessagesText": "When you have messages, they will appear here."
+        },
+        "Notification": {
+            "Tooltip": "Notification",
+            "Title": "Notification",
+            "NoNotification": "No notifications",
+            "NoNotificationsText": "When you have notifications, they will appear here."
+        },
+        "Shorcuts": {
+            "Tooltip": "Shortcuts",
+            "Title": "Shortcuts",
+            "Add": {
+                "Title": "Add new shortcut",
+                "Shortcut": "Add shortcut"
+            },
+            "Edit": {
+                "Title": "Edit shortcut",
+                "Enter": "Enter edit mode",
+                "Exit": "Exit edit mode"
+            },
+            "Cancel": "Cancel",
+            "NoShortcuts": "No shortcuts",
+            "NoShortcutsText": "When you have shortcuts, they will appear here.",
+            "Form": {
+                "Label": "Label",
+                "Description": "Description",
+                "Icon": "Icon",
+                "Link": "Link",
+                "Router": "Internal / External Links",
+                "Delete": "Delete",
+                "Add": "Add",
+                "Update": "Update"
+            }
+        }
+    },
+    "Table": {
+        "customer": "Full Name",
+        "row": "Row",
+        "action": "Action",
+        "phone": "Phone",
+        "price": "Price",
+        "mobile": "Mobile",
+        "currency": "Currency",
+        "address": "Address",
+        "email": "Email",
+        "nickName": "Nick Name",
+        "role": "Role",
+        "username": "Username",
+        "count": "Count",
+        "invoice": "Invoice Title",
+        "title": "Title",
+        "slogan": "Slogan",
+        "openInvoiceCount": "Open Invoice Count",
+        "closedInvoiceCount": "Closed Invoice Count",
+        "paidInvoiceCount": "Paid Invoice Count",
+        "cancelledInvoiceCount": "Cancelled Invoice Count",
+        "returnedInvoiceCount": "Return Invoice Count",
+        "isSelected": "Selected",
+        "icon": "Icon",
+        "documentNumber": "Document Number",
+        "discount": "Discount",
+        "totalDiscount": "Total Discount",
+        "tax": "Tax",
+        "taxAmount": "Tax Amount",
+        "totalPrice": "Total Price",
+        "date": "Date",
+        "dueDate": "Due Date",
+        "payDate": "Pay Date",
+        "invoiceStatus": "Invoice Status",
+        "invoiceType": "Invoice Type",
+        "unit": "Unit",
+        "createdAt": "Created At",
+        "updatedAt": "Updated At",
+        "product": "Product Name",
+        "birthDay": "Birth Date",
+        "isActive": "Active",
+        "description": "Description",
+        "productId": "Product Name",
+        "quantity": "Quantity",
+        "unitPrice": "Unit Price"
+    },
+    "Btn": {
+        "Sign-in": "Sign-In",
+        "Send-Code": "Send-Code",
+        "Delete": "Delete",
+        "Edit": "Edit",
+        "ReturnInvoice": "Return Invoice",
+        "Close": "Close",
+        "Cancel": "Cancel",
+        "MarkAsPay": "Mark As Pay",
+        "Detail": "View Details",
+        "Invoice": "View Invoice Information",
+        "Password": "Change Password",
+        "Account": "Create Username",
+        "Permission": "Change User Role",
+        "ChangeDefault": "Change Default Currency",
+        "Add": "Add",
+        "Yes": "Yes",
+        "No": "No",
+        "Submit": "Submit",
+        "Discount": "Apply Discount",
+        "Active": "Activate",
+        "DeActive": "Deactivate"
+    },
+    "Form": {
+        "Field": {
+            "Username": "Username",
+            "Password": "Password",
+            "Mobile": "Mobile",
+            "Code": "Code",
+            "customer": "Full Name",
+            "birthDay": "Birth Date",
+            "mobile": "Mobile",
+            "email": "Email",
+            "address": "Address",
+            "username": "Username",
+            "password": "Password",
+            "confirmPassword": "Confirm Password",
+            "nickName": "Nickname",
+            "role": "Role",
+            "oldPassword": "Old Password",
+            "slogan": "Slogan",
+            "lang": "Language",
+            "localeData": "Calendar Type",
+            "tax": "Tax",
+            "company": "Service Name (Office, Company, Shop, etc.)",
+            "currencyId": "Currency",
+            "price": "Price",
+            "unit": "Unit",
+            "product": "Product Name",
+            "discount": "Discount",
+            "documentNumber": "Document Number",
+            "customerId": "Customer",
+            "date": "Invoice Date",
+            "dueDate": "Invoice Due Date",
+            "description": "Description",
+            "note": "Note",
+            "invoice": "Invoice Title",
+            "payDate": "Payment Date",
+            "unitProduct": "Product Unit",
+            "productId": "Product Name",
+            "quantity": "Quantity",
+            "newRole": "New Role",
+            "Enum": {
+                "currency": {
+                    "USD": "US Dollar",
+                    "PKR": "Pakistani Rupee",
+                    "IRT": "Iranian Toman",
+                    "IRR": "Iranian Rial",
+                    "EUR": "Euro",
+                    "AFN": "Afghan Afghani"
+                },
+                "role": {
+                    "1": "Owner",
+                    "2": "Admin",
+                    "3": "Cashier"
+                },
+                "invoiceType": {
+                    "1": "Sales",
+                    "2": "Purchasing",
+                    "3": "Sales Return",
+                    "4": "Purchasing Return"
+                },
+                "invoiceStatus": {
+                    "1": "Open",
+                    "2": "Closed",
+                    "3": "Paid",
+                    "4": "Cancelled"
+                }
+            },
+            "Sex": {
+                "Female": "Female",
+                "Male": "Male"
+            },
+            "Boolean": {
+                "True": "Yes",
+                "False": "No"
+            }
+        },
+        "Btn": {
+            "Cancel": "Cancel",
+            "Submit": "Submit",
+            "Add": "Add"
+        },
+        "Validation": {
+            "required": "This field is required.",
+            "requiredTrue": "This option is mandatory.",
+            "minlength": "Minimum character count should be {{ requiredLength }}.",
+            "maxlength": "Maximum character count should not exceed {{ requiredLength }}.",
+            "min": "The value must not be less than {{ min }}.",
+            "max": "The value must not be greater than {{ max }}.",
+            "email": "Invalid email format.",
+            "pattern": "The entered value does not match the required pattern.",
+            "typeMismatch": "Invalid data type.",
+            "tooShort": "Character count is less than the minimum allowed.",
+            "tooLong": "Character count exceeds the maximum allowed.",
+            "rangeUnderflow": "The value is below the allowed range.",
+            "rangeOverflow": "The value is above the allowed range.",
+            "stepMismatch": "The value does not match the specified step.",
+            "valueMissing": "This field is required.",
+            "badInput": "The entered value cannot be processed.",
+            "matDatepickerParse": "Invalid date format.",
+            "matDatepickerInvalid": "Invalid date.",
+            "matDatepickerMin": "Date must not be before {{ min }}.",
+            "matDatepickerMax": "Date must not be after {{ max }}.",
+            "passwordMismatch": "Passwords do not match.",
+            "passwordsMatch": "New password must be different from the current password.",
+            "passwordsMismatch": "Password confirmation does not match.",
+            "invalidNationalCode": "Invalid national code.",
+            "WrongCode": "The entered code is incorrect.",
+            "WrongCredentials": "The username or password is incorrect.",
+            "Identity": {
+                "User": {
+                    "NotFound": "User not found.",
+                    "AlreadyActive": "To activate, user status must be 'inactive'.",
+                    "AlreadyDeactivated": "To deactivate, user status must be 'active'.",
+                    "DuplicateUsername": "This username is already taken.",
+                    "DuplicatePhone": "This mobile number is already registered.",
+                    "InvalidCredentials": "Incorrect username or password.",
+                    "PasswordNotMatch": "Password and confirmation do not match.",
+                    "OldPasswordNotMatch": "Your old password is incorrect."
+                },
+                "Auth": {
+                    "InvalidOtp": "The verification code is invalid.",
+                    "InvalidToken": "The provided token is invalid.",
+                    "NotFoundToken": "Token not found.",
+                    "OtpRequestLimitExceeded": "Too many OTP requests. Please wait until the existing code expires."
+                },
+                "Company": {
+                    "NotFound": "Company not found."
+                }
+            },
+            "Pack": {
+                "PackagePlan": {
+                    "NotFound": "Subscription package not found."
+                },
+                "SubscriptionPackageOrder": {
+                    "NotFound": "Subscription cart not found."
+                },
+                "Company": {
+                    "NotFound": "Company not found."
+                },
+                "CompanySubscription": {
+                    "NotFound": "Company subscription not found.",
+                    "CannotBeRenewed": "An active package cannot be renewed."
+                }
+            },
+            "Factor": {
+                "Company": {
+                    "AlreadyActive": "To activate, the company status must be 'inactive'.",
+                    "AlreadyDeactivated": "To deactivate, the company status must be 'active'.",
+                    "NotFound": "Company not found."
+                },
+                "Product": {
+                    "AlreadyActive": "To activate, the product status must be 'inactive'.",
+                    "AlreadyDeactivated": "To deactivate, the product status must be 'active'.",
+                    "NotFound": "Product not found."
+                },
+                "Customer": {
+                    "NotFound": "Customer not found."
+                },
+                "Currency": {
+                    "NotFound": "Currency not found."
+                },
+                "Invoice": {
+                    "NotFound": "Invoice not found.",
+                    "Duplicate": "Invoice not found.",
+                    "InvoiceItemNotFound": "Invoice item not found."
+                }
+            },
+            "Hub": {
+                "User": {
+                    "NotFound": "User not found."
+                },
+                "Company": {
+                    "NotFound": "Company not found."
+                },
+                "Slogan": {
+                    "NotFound": "Slogan not found.",
+                    "Forbidden": "You do not have access to this section."
+                },
+                "Shortcut": {
+                    "NotFound": "Shortcut not found.",
+                    "Forbidden": "You do not have access to this section."
+                }
+            },
+            "Data": {
+                "Company": {
+                    "NotFound": "Requested company not found."
+                },
+                "Customer": {
+                    "NotFound": "Requested customer not found."
+                },
+                "Currency": {
+                    "NotFound": "Requested currency not found."
+                },
+                "Invoice": {
+                    "NotFound": "Requested invoice not found.",
+                    "CurrencyNotFound": "Invoice currency not found."
+                },
+                "Product": {
+                    "NotFound": "Requested product not found."
+                },
+                "Shortcut": {
+                    "NotFound": "Requested shortcut not found."
+                },
+                "Slogan": {
+                    "NotFound": "Requested slogan not found."
+                },
+                "Notification": {
+                    "NotFound": "Requested notification not found."
+                },
+                "User": {
+                    "NotFound": "Requested user not found."
+                },
+                "CompanySubscription": {
+                    "NotFound": "Requested company subscription not found."
+                },
+                "PackagePlan": {
+                    "NotFound": "Requested package not found."
+                },
+                "SubscriptionPackageOrder": {
+                    "NotFound": "Requested package order not found."
+                }
+            },
+            "Domain": {
+                "Tutorial": {
+                    "TitleRequired": "Tutorial title cannot be empty.",
+                    "UriRequired": "Tutorial URL is required."
+                },
+                "Ticket": {
+                    "EmptyMessage": "A message must contain at least text or an attachment."
+                },
+                "Invoice": {
+                    "InvalidCustomer": "Invalid customer identifier.",
+                    "InvalidCurrency": "Invalid currency identifier.",
+                    "DocumentNumberRequired": "Document number is required.",
+                    "TitleRequired": "Invoice title is required.",
+                    "MustBeOpenToModify": "Only open invoices can be edited.",
+                    "MustBeOpenToIssue": "Only open invoices can be issued.",
+                    "CurrencyMismatch": "Item currency does not match the invoice currency.",
+                    "DiscountExceedsTotal": "Discount amount cannot exceed the total amount.",
+                    "CannotIssueEmpty": "An invoice without items cannot be issued.",
+                    "MustBeIssuedBeforePayment": "Invoice must be finalized before payment.",
+                    "CannotCancelPaid": "A paid invoice cannot be cancelled.",
+                    "ReturnInvoiceMustBeSalesOrPurchasing": "Only a sales or purchase invoice can be returned.",
+                    "ReturnInvoiceMustBePaid": "A paid invoice can be returned.",
+                    "ItemAlreadyExists": "This product has already been added to the invoice."
+                },
+                "InvoiceItem": {
+                    "NotFound": "Invoice item not found.",
+                    "InvalidQuantity": "Quantity must be greater than zero.",
+                    "DiscountExceedsTotal": "Item discount cannot exceed its total price."
+                },
+                "Company": {
+                    "NameRequired": "Company name is required.",
+                    "InvalidCurrency": "Invalid currency identifier."
+                },
+                "Customer": {
+                    "NameRequired": "Customer name is required."
+                },
+                "General": {
+                    "InvalidCompanyId": "Invalid or missing Company ID.",
+                    "InvalidId": "The provided identifier is invalid.",
+                    "NotFound": "Entity not found."
+                },
+                "Product": {
+                    "NameRequired": "Product name is required.",
+                    "UnitRequired": "Unit of measurement is required.",
+                    "DuplicateCurrency": "A price with this currency already exists for this product.",
+                    "PriceNotFound": "The requested price was not found in the product's price list.",
+                    "PriceIsNull": "Price amount is required."
+                },
+                "ValueObject": {
+                    "NotNullProductPriceId": "Product price ID is required.",
+                    "NotNullDocumentNumber": "Document number is required.",
+                    "NotNullTicketId": "Ticket ID is required.",
+                    "NotNullSubscriptionPackageOrderId": "Subscription package order ID is required.",
+                    "NotNullSloganId": "Slogan ID is required.",
+                    "NotNullTokenId": "Token ID is required.",
+                    "NotNullShortcutId": "Shortcut ID is required.",
+                    "NotNullNotificationId": "Notification ID is required.",
+                    "NotNullPackagePropertyId": "Package property ID is required.",
+                    "NotNullInvoiceItemId": "Invoice item ID is required.",
+                    "NotNullInvoiceId": "Invoice ID is required.",
+                    "NotNullTicketMessageId": "Ticket message ID is required.",
+                    "NotNullPackagePlanId": "Package plan ID is required.",
+                    "NotNullCustomerId": "Customer ID is required.",
+                    "NotNullCompanySubscriptionId": "Company subscription ID is required.",
+                    "NotNullCurrencyId": "Currency ID is required.",
+                    "NotNullDepartmentId": "Department ID is required.",
+                    "NotNullProductId": "Product ID is required.",
+                    "NotNullMobile": "Mobile number is required.",
+                    "PasswordEmpty": "Password is required.",
+                    "MobileInvalidFormat": "Invalid mobile number format.",
+                    "TaxRateOutOfRange": "Tax rate must be between 0 and 100.",
+                    "UsernameRequired": "Username is required.",
+                    "UsernameTooShort": "Username must be at least 3 characters.",
+                    "AmountMustBePositive": "Amount must be positive.",
+                    "CurrencyRequired": "Currency is required."
+                },
+                "SubscriptionOrder": {
+                    "DiscountExceedsPrice": "Discount exceeds the package price.",
+                    "CannotCancelPurchased": "A paid order cannot be cancelled.",
+                    "CannotPurchaseCanceled": "A cancelled order cannot be paid.",
+                    "InvalidStorageAmount": "Invalid storage amount. It must be greater than zero.",
+                    "InvalidCompany": "Company ID is required and must be valid."
+                },
+                "SubscriptionPackageOrder": {
+                    "OnlyPurchasedOrdersCanBeRefunded": "Paid amount has been refunded to the user account."
+                },
+                "PackagePlan": {
+                    "NameRequired": "Package name is required.",
+                    "PackagePropertyValueRequired": "Feature value is required.",
+                    "InvalidPropertyId": "Invalid feature identifier.",
+                    "InvalidPrice": "Price cannot be zero or negative.",
+                    "PropertyNotFound": "The requested feature was not found in this package.",
+                    "DuplicatePropertyType": "This feature already exists in the package."
+                },
+                "CompanySubscription": {
+                    "NotFoundSubscription": "Your subscription system has encountered an issue. Please contact support.",
+                    "CannotRenewYet": "Renewal is only allowed during the last 30 days of subscription or after expiry.",
+                    "SubscriptionExpired": "Your subscription has expired.",
+                    "InvalidStorageAmount": "Requested storage amount must be greater than zero.",
+                    "FreeTrialAlreadyUsed": "You have already used the free trial."
+                },
+                "Slogan": {
+                    "TitleRequired": "Slogan title is required."
+                },
+                "Shortcut": {
+                    "UserMustBeAuthenticated": "User must be logged in to create a shortcut.",
+                    "LabelRequired": "Shortcut label is required.",
+                    "IconRequired": "Shortcut icon is required.",
+                    "LinkRequired": "Shortcut link is required."
+                },
+                "User": {
+                    "CannotCreateAnotherOwner": "Creating a new owner in this way is not allowed.",
+                    "NickNameCannotBeEmpty": "Nickname is required.",
+                    "AccountAlreadyExists": "An account already exists for this user.",
+                    "OwnerCannotBeDemoted": "System owner cannot be demoted.",
+                    "CannotPromoteToAdmin": "No user can be promoted to system owner."
+                },
+                "Token": {
+                    "NotFound": "Token not found.",
+                    "AlreadyInactive": "Token is inactive or has expired."
+                },
+                "Notification": {
+                    "IconRequired": "Notification icon is required.",
+                    "TitleRequired": "Notification title is required.",
+                    "LinkRequired": "Notification link is required.",
+                    "AlreadyRead": "This notification has already been read."
+                }
+            }
+        },
+        "Placeholder": {
+            "customer": "Enter your full name",
+            "birthDay": "Enter your birth date",
+            "mobile": "Enter your mobile number",
+            "email": "Enter your email",
+            "address": "Enter your address",
+            "username": "Enter your username",
+            "password": "Enter your password",
+            "confirmPassword": "Re-enter your password",
+            "nickName": "Enter your nickname",
+            "role": "Search for a role...",
+            "oldPassword": "Enter your old password",
+            "slogan": "Write a slogan to be printed on the invoice footer",
+            "lang": "Search for software language...",
+            "localeData": "Search for calendar type...",
+            "tax": "Enter your tax",
+            "company": "Enter your service name",
+            "currencyId": "Search for currency...",
+            "currencyIdNoSearch": "Select currency",
+            "unit": "Enter the unit",
+            "price": "Enter the price",
+            "product": "Enter your product name",
+            "discount": "Enter discount amount",
+            "documentNumber": "Enter document number",
+            "customerId": "Search for customer...",
+            "date": "Select invoice date",
+            "dueDate": "Select due date",
+            "description": "If you have any description, please enter it",
+            "note": "If you have a note for the invoice, enter it (not shown in the printed output).",
+            "invoice": "Enter invoice title",
+            "payDate": "Select payment date",
+            "productId": "Search for product name...",
+            "quantity": "Enter quantity",
+            "newRole": "Search for new role..."
+        }
+    },
+    "Error": {},
+    "ChangeLog": {
+        "Released": "Released",
+        "InProgress": "In Progress",
+        "NextStep": "Next Step",
+        "Type": {
+            "Added": "Added",
+            "Fixed": "Fixed",
+            "Improved": "Improved",
+            "Deprecated": "Deprecated",
+            "Breaking": "Breaking Changes",
+            "Changed": "Changed"
+        },
+        "v1.0.0": {
+            "Added": {
+                "1": "Full customer management (add, edit, delete, and view list with advanced search and pagination)",
+                "2": "User management including registration, editing, role changes, and deactivation",
+                "3": "Define and edit slogans for printing on invoice footers",
+                "4": "Product management with unit definition and pricing",
+                "5": "Software subscription packages for purchase and management",
+                "6": "Sales invoice system with product addition, discounts, payment, and returns",
+                "7": "Tutorial section to guide users in using the application",
+                "8": "Software settings section including language, calendar, company info, user profile, and other configurations"
+            }
+        },
+        "v1.0.1": {
+            "Improved": {
+                "1": "Added Arabic, Afghan, and Pakistani languages",
+                "2": "Added invoice editing & discount"
+            },
+            "Fixed": {
+                "1": "Added payment gateway for packages and plans",
+                "2": "Fixed issues in tickets, messages, shortcuts, and notifications",
+                "3": "Improved form validations",
+                "4": "Fully fixed RTL/LTR issues across the entire project",
+                "5": "Added 404 (Not Found) error page",
+                "6": "Added 403 (Forbidden) error page",
+                "7": "Added 500 (Internal Server Error) error page"
+            }
+        },
+        "v1.0.2": {
+            "Fixed": {
+                "1": "Fixed and standardized icons"
+            },
+            "Improved": {
+                "1": "Added Excel and PDF export to all data tables"
+            },
+            "Added": {
+                "1": "Added management dashboard",
+                "2": "Added warehouse management",
+                "3": "Added purchase invoice"
+            }
+        },
+        "v1.0.3": {
+            "Improved": {
+                "1": "Added document upload capability",
+                "2": "Improved payment gateway for purchasing extra storage and document space",
+                "3": "Added wallet top-up via payment gateway"
+            },
+            "Added": {
+                "1": "Added user wallet",
+                "2": "Added SMS notification system"
+            }
+        },
+        "v1.1.0": {
+            "Breaking": {
+                "1": "Added professional reporting system"
+            },
+            "Improved": {
+                "1": "Enhanced search and sorting in tables and reports",
+                "2": "Added online invoice delivery to customers via QR code and link"
+            }
+        }
+    },
+    "InvoiceInformation": {
+        "Customer": "Customer Invoice Info",
+        "DocumentNumber": "Document Number",
+        "Invoice": "Invoice Title",
+        "Status": "Invoice Status",
+        "Type": "Invoice Type",
+        "Date": "Date",
+        "PayDate": "Payment Date",
+        "DueDate": "Due Date",
+        "Price": "Price",
+        "Discount": "Discount",
+        "TotalDiscount": "Total Discount",
+        "Tax": "Tax (%)",
+        "TaxAmount": "Tax Amount",
+        "TotalPrice": "Total Price",
+        "Description": "Description",
+        "Note": "Note"
+    },
+    "Product": {
+        "Stepper": {
+            "BasicInfo": "Basic Information",
+            "PriceInfo": "Price Information"
+        }
+    },
+    "SignInPage": {
+        "Title": "Sign In",
+        "Link": {
+            "SignIn": "Login with OTP",
+            "Verify": "Login with username",
+            "VerifySignIn": "Edit Phone Number"
+        },
+        "Licenses": "Licenses",
+        "Wellcome": "Welcome to",
+        "Description": "Invoice Service is a simple and practical application designed for creating, managing, and sending service invoices. With this app, you can quickly record customer information, service details, costs, and payment status. Our goal is to help service providers handle invoicing more professionally, efficiently, and accurately.",
+        "Join": "Welcome to our expanding Invoice Service community. It’s your turn to join!"
+    },
+    "SignOut": {
+        "Title": "You have signed out!",
+        "Redirecting": "Redirecting in",
+        "Redirected": "You are now being redirected!",
+        "Go": "Go to",
+        "Link": "sign in",
+        "Second": "second",
+        "Seconds": "seconds"
+    },
+    "Dialog": {
+        "Success": {
+            "Title": "Operation Completed",
+            "Message": "Operation was successful."
+        },
+        "Back": {
+            "Title": "Return to Previous Page",
+            "Message": "Do you want to go back?"
+        },
+        "Cancel": {
+            "Title": "Cancel Operation",
+            "Message": "Are you sure you want to cancel this operation?"
+        },
+        "Processing": {
+            "Title": "Processing Operation",
+            "Message": "Are you sure you want to perform this operation?"
+        }
+    },
+    "navigation": {
+        "customer": {
+            "title": "Customer Information",
+            "subtitle": "All customer services",
+            "add": "Register New Customer",
+            "list": "Customers"
+        },
+        "user": {
+            "title": "User Information",
+            "subtitle": "All user services",
+            "add": "Register New User",
+            "list": "Users"
+        },
+        "slogan": {
+            "title": "Slogan Information",
+            "subtitle": "All slogan services",
+            "add": "Register New Slogan",
+            "list": "Slogans"
+        },
+        "product": {
+            "title": "Product Information",
+            "subtitle": "All Product services",
+            "add": "Register New Product",
+            "list": "Products"
+        },
+        "app": {
+            "title": "Application Info",
+            "subtitle": "All business and software services",
+            "setting_app": "Software Settings",
+            "setting_company": "Header Information",
+            "setting_company_tax": "Tax Information"
+        },
+        "currency": {
+            "title": "Currency Info",
+            "subtitle": "All currency settings",
+            "change_default": "Change Currency Unit",
+            "list": "Currency"
+        },
+        "personal": {
+            "title": "Personal Info",
+            "subtitle": "All profile changes",
+            "change_password": "Change Password",
+            "profile": "Edit Profile"
+        },
+        "dashboard": {
+            "title": "Dashboard",
+            "tooltip": "Dashboard"
+        },
+        "information": {
+            "title": "Information",
+            "tooltip": "Information"
+        },
+        "invoice": {
+            "title": "Invoice",
+            "tooltip": "Invoice"
+        },
+        "tutorial": {
+            "title": "Tutorial",
+            "tooltip": "Tutorial"
+        },
+        "production": {
+            "title": "Production",
+            "tooltip": "Production"
+        },
+        "changeLog": {
+            "title": "Change Log",
+            "tooltip": "Change Log"
+        }
+    },
+    "lang": {
+        "fa": "Persian",
+        "en": "English"
+    },
+    "locale": {
+        "fa": "Jalali (Solar)",
+        "en": "Gregorian"
+    },
+    "AppName": "FactorAdak"
+}

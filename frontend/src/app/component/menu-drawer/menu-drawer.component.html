@@ -1,0 +1,35 @@
+<div class="absolute inset-0 flex flex-col min-w-0 overflow-hidden" [dir]="currentDir">
+
+    <mat-drawer-container class="flex-auto h-full" autosize>
+
+        <!-- Drawer -->
+        <mat-drawer class="w-72 dark:bg-gray-900" [autoFocus]="false" #matDrawer [opened]="!isScreenSmall"
+            [mode]="isScreenSmall ? 'over' : 'side'">
+            <fuse-vertical-navigation [appearance]="'default'" [navigation]="translatedMenuData()" [inner]="true"
+                [mode]="'side'" class="h-full w-full" [opened]="true">
+   
+            </fuse-vertical-navigation>
+        </mat-drawer>
+
+        <!-- Drawer content -->
+        <mat-drawer-content #matDrawerContent class="relative flex flex-col">
+            <div
+                class="flex flex-row flex-auto justify-start items-center shadow bg-white p-3 px-4 md:px-6 max-h-[65.5px]">
+                <button class="me-auto" mat-icon-button (click)="matDrawer.toggle()">
+                    <mat-icon [svgIcon]="'heroicons_outline:bars-3'"></mat-icon>
+                </button>
+                <user></user>
+
+            </div>
+
+            <div class="relative w-full h-full overflow-hidden">
+                <div class="absolute inset-4 overflow-y-auto flex flex-col  ">
+                    <ng-content></ng-content>
+                </div>
+            </div>
+
+        </mat-drawer-content>
+
+    </mat-drawer-container>
+
+</div>

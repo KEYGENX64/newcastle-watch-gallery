@@ -1,0 +1,61 @@
+/* ----------------------------------------------------------------------------------------------------- */
+/*  @ Import/write your custom styles here.
+/*  @ Styles from this file will override 'vendors.scss' and Fuse's base styles.
+/* ----------------------------------------------------------------------------------------------------- */
+@font-face {
+  font-family: 'dana vf';
+  src: url('/fonts/dana/dana.woff') format('woff-variations'),
+    url('/fonts/dana/dana.woff') format('woff'),
+    url('/fonts/dana/dana.woff2') format('woff2');
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: dana;
+  src: url('/fonts/dana/staticfonts/dana-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: dana;
+  src: url('/fonts/dana/staticfonts/dana-bold.woff') format('woff');
+  font-weight: 700;
+}
+
+
+:root {
+  --font-primary: 'dana vf';
+}
+
+* {
+  font-family: inherit !important;
+}
+
+html {
+  font-family: var(--font-primary) !important;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+/* حذف فلش‌ها در Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+table {
+  table-layout: auto; // برای بزرگ شدن سلول‌ها
+
+}
+
+table th,
+table td {
+  white-space: nowrap; // تک خط
+}
+
+.mat-mdc-table-sticky {
+  background-color: white !important;
+}
+
+//====================================================================

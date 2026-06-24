@@ -1,0 +1,6 @@
+    .owl-item {
+        height:100px !important; /* ارتفاع دلخواه */
+        display: flex !important; /* برای اطمینان از تراز شدن محتوا در داخل اسلاید */
+        justify-content: center; /* برای تراز افقی محتوا */
+        align-items: center; /* برای تراز عمودی محتوا */
+    }

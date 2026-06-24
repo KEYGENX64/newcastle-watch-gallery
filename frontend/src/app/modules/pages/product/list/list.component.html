@@ -1,0 +1,16 @@
+<div class="w-full h-full flex flex-col justify-between p-2">
+
+    <div class="w-full grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mb-4">
+        <app-product-card *ngFor="let p of products" [product]="p" [isAdmin]="isAdmin"
+            (view)="_router.navigate(['information', 'product', 'detail', p.id])"
+            (edit)="_router.navigate(['information', 'product', 'edit', p.id])" (remove)="onDelete(p)">
+        </app-product-card>
+    </div>
+
+    <mat-paginator [length]="_pageChangeEvent.length" [pageSize]="_pageChangeEvent.pageSize"
+        [pageIndex]="_pageChangeEvent.pageIndex" [pageSizeOptions]="_pageChangeEvent.pageSizeOptions"
+        [showFirstLastButtons]="_pageChangeEvent.showFirstLastButtons" class="w-full bg-gray-100 rounded-lg shadow-sm"
+        (page)="onHandlePageEvent($event)">
+    </mat-paginator>
+
+</div>

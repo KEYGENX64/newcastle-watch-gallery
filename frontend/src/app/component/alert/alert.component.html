@@ -1,0 +1,5 @@
+<fuse-alert class="w-full" [type]="item.type" appearance="border" *ngFor="let item of alerts()">
+    <ng-container *transloco="let t">
+        {{t(item.message)}}
+    </ng-container>
+</fuse-alert>

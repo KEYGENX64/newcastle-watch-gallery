@@ -1,0 +1,43 @@
+<app-form [formGroup]="_form" (onSubmit)="submit($event)" (onCancell)="onBack()">
+    <div class="flex flex-col flex-auto w-full h-full" [ngStyle]="_formSchema.formStyle">
+
+        <div class="grid grid-cols-12 gap-4 mb-4" *ngFor="let row of _formSchema.rows; let rowIndex = index"
+            [ngStyle]="row.style">
+
+            <div [ngClass]="getColumnClasses(column.width)"
+                *ngFor="let column of row.columns; let columnsIndex = index">
+
+                <div *ngFor="let widgetConfig of column.widgets; let widgetIndex = index" class="widget-wrapper "
+                    [ngStyle]="widgetConfig.style">
+                    <ng-container [ngSwitch]="widgetConfig.widgetType">
+                        <widget-input *ngSwitchCase="'input'" [widgetConfig]="widgetConfig"
+                            [formControl]="_form.get(widgetConfig.name)"></widget-input>
+
+                        <widget-textarea *ngSwitchCase="'textarea'" [widgetConfig]="widgetConfig"
+                            [formControl]="_form.get(widgetConfig.name)"></widget-textarea>
+
+                        <widget-input-password *ngSwitchCase="'inputPassword'" [widgetConfig]="widgetConfig"
+                            [formControl]="_form.get(widgetConfig.name)"></widget-input-password>
+
+                        <widget-input-number *ngSwitchCase="'inputNumber'" [widgetConfig]="widgetConfig"
+                            [formControl]="_form.get(widgetConfig.name)"></widget-input-number>
+                        <widget-input-phone *ngSwitchCase="'inputPhone'" [widgetConfig]="widgetConfig"
+                            [formControl]="_form.get(widgetConfig.name)"></widget-input-phone>
+
+                        <widget-input-select *ngSwitchCase="'select'" [widgetConfig]="widgetConfig"
+                            [formControl]="_form.get(widgetConfig.name)"></widget-input-select>
+
+                        <widget-date-picker *ngSwitchCase="'date'" [widgetConfig]="widgetConfig"
+                            [formControl]="_form.get(widgetConfig.name)"></widget-date-picker>
+                        <widget-input-email *ngSwitchCase="'inputEmail'" [widgetConfig]="widgetConfig"
+                            [formControl]="_form.get(widgetConfig.name)"></widget-input-email>
+                            <widget-input-file *ngSwitchCase="'file'" [widgetConfig]="widgetConfig"
+    [formControl]="_form.get(widgetConfig.name)"></widget-input-file>
+                    </ng-container>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</app-form>

@@ -1,0 +1,53 @@
+<div class="product-card w-full" (click)="onView()">
+    <div class="product-card__image-container">
+        <img class="product-card__image" [src]="_product.image || 'assets/images/no-image.png'" [alt]="_product.name">
+    </div>
+
+    <div class="product-card__overlay"></div>
+
+    <div class="product-card__content">
+        <h2 class="product-card__title" [matTooltip]="_product.name">{{ _product.name }}</h2>
+        <p class="product-card__class">
+            {{ _product.brand }}
+            <span *ngIf="genderLabel"> · {{ genderLabel }}</span>
+            <span *ngIf="movementTypeLabel"> · {{ movementTypeLabel }}</span>
+        </p>
+
+        <div class="product-card__details">
+            <div class="product-card__detail-item" *ngIf="_product.category">
+                <mat-icon class="icon-size-4" [svgIcon]="'heroicons_solid:folder'"></mat-icon>
+                <strong>{{ _product.category }}</strong>
+            </div>
+            <div class="product-card__detail-item" [class.product-card__detail-item--danger]="isOutOfStock">
+                <mat-icon class="icon-size-4" [svgIcon]="'heroicons_solid:cube'"></mat-icon>
+                <strong>{{ stockLabel }}</strong>
+            </div>
+        </div>
+
+        <div class="product-card__price-row">
+            <span *ngIf="hasDiscount" class="product-card__price-old">
+                {{ _product.price | number }} تومان
+            </span>
+
+            <strong class="product-card__price-final">
+                {{ (hasDiscount ? _product.discount_price : _product.price) | number }} تومان
+            </strong>
+        </div>
+
+        <div class="product-card__actions">
+            <button type="button" class="product-card__search-btn" (click)="onView()">
+                مشاهده محصول
+            </button>
+
+            <ng-container *ngIf="isAdmin()">
+                <button type="button" class="product-card__icon-btn" (click)="onEdit($event)" title="ویرایش">
+                    <mat-icon class="icon-size-4" [svgIcon]="'mat_solid:edit'"></mat-icon>
+                </button>
+                <button type="button" class="product-card__icon-btn product-card__icon-btn--danger"
+                    (click)="onRemove($event)" title="حذف">
+                    <mat-icon class="icon-size-4" [svgIcon]="'mat_solid:delete'"></mat-icon>
+                </button>
+            </ng-container>
+        </div>
+    </div>
+</div>

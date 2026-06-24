@@ -1,0 +1,26 @@
+<div
+    class="bg-card border h-full border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden shadow-sm flex flex-col ">
+
+    <!-- Video wrapper -->
+    <div class="h_iframe-aparat_embed_frame relative bg-black">
+        <span class="block w-full" style="padding-top: 56.25%"></span>
+        <iframe [src]="videoUrl" class="absolute inset-0 w-full h-full" frameborder="0" allowfullscreen
+            allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true">
+        </iframe>
+        <!-- Badge -->
+        <div class="absolute top-2 left-2 bg-black/50 text-white text-xs font-medium px-2 py-1 rounded-md">
+            آپارات
+        </div>
+    </div>
+
+    <!-- Info -->
+    <div class="p-4 flex flex-col flex-1">
+        <p class="text-base font-medium lg:text-[15px] text-gray-900 dark:text-white leading-relaxed mb-1 line-clamp-1">
+            {{ option().title }}
+        </p>
+        <p class="text-sm line-clamp-4 lg:text-md text-justify text-gray-500 dark:text-gray-400 leading-relaxed ">
+            {{ option().description }}
+        </p>
+    </div>
+
+</div>

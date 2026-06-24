@@ -1,0 +1,18 @@
+<form class="flex flex-col bg-card shadow rounded overflow-hidden w-full h-full" [formGroup]="_form"
+    (ngSubmit)="submit(_form.value)">
+
+    <div class="relative w-full h-full overflow-hidden">
+        <div class="absolute inset-0 overflow-y-auto flex flex-col px-8 pt-10">
+            <ng-content></ng-content>
+        </div>
+    </div>
+    <ng-container *transloco="let t">
+        <div class="flex items-center justify-end border-t mt-8 px-8 py-5 bg-gray-50 dark:bg-gray-700">
+            <a mat-button (click)="onBack()"> {{t("Form.Btn.Cancel")}} </a>
+            <button class="px-6 ms-3" mat-flat-button [color]="'primary'" type="submit"
+                [disabled]="_form.disabled || _form.pristine || _form.invalid">
+                {{t("Form.Btn.Submit")}}
+            </button>
+        </div>
+    </ng-container>
+</form>

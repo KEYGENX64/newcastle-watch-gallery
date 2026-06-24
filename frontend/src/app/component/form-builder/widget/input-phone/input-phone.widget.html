@@ -1,0 +1,132 @@
+<ng-container *transloco="let t">
+    <mat-form-field class="w-full h-full" appearance="outline">
+        <mat-label>{{_widgetConfig.label ? _widgetConfig.label : t("Form.Field." + _widgetConfig.name) }}</mat-label>
+        <input matInput [formControl]="_formControl"
+            [placeholder]="_widgetConfig.placeholder ? _widgetConfig.placeholder : t('Form.Placeholder.'+_widgetConfig.name)"
+            type="text" appOnlyNumber>
+
+        @if(_widgetConfig.icon){
+        <mat-icon class="icon-size-5" matPrefix [svgIcon]="_widgetConfig.icon"></mat-icon>
+        }
+
+         <mat-error *ngIf="_formControl && _formControl.touched && _formControl.hasError('required')">
+            {{ t('Form.Validation.required') }}
+        </mat-error>
+
+        <!-- requiredTrue -->
+        <mat-error *ngIf="_formControl && _formControl.touched && _formControl.hasError('requiredTrue')">
+            {{ t('Form.Validation.requiredTrue') }}
+        </mat-error>
+
+        <!-- minlength -->
+        <mat-error *ngIf="_formControl && _formControl.touched && _formControl.hasError('minlength')">
+            {{ t('Form.Validation.minlength', { requiredLength: _formControl.getError('minlength')?.requiredLength }) }}
+        </mat-error>
+
+        <!-- maxlength -->
+        <mat-error *ngIf="_formControl && _formControl.touched && _formControl.hasError('maxlength')">
+            {{ t('Form.Validation.maxlength', { requiredLength: _formControl.getError('maxlength')?.requiredLength }) }}
+        </mat-error>
+
+        <!-- min -->
+        <mat-error *ngIf="_formControl && _formControl.touched && _formControl.hasError('min')">
+            {{ t('Form.Validation.min', { min: _formControl.getError('min')?.min }) }}
+        </mat-error>
+
+        <!-- max -->
+        <mat-error *ngIf="_formControl && _formControl.touched && _formControl.hasError('max')">
+            {{ t('Form.Validation.max', { max: _formControl.getError('max')?.max }) }}
+        </mat-error>
+
+        <!-- email -->
+        <mat-error *ngIf="_formControl && _formControl.touched && _formControl.hasError('email')">
+            {{ t('Form.Validation.email') }}
+        </mat-error>
+
+        <!-- pattern -->
+        <mat-error *ngIf="_formControl && _formControl.touched && _formControl.hasError('pattern')">
+            {{ t('Form.Validation.pattern') }}
+        </mat-error>
+
+        <!-- typeMismatch -->
+        <mat-error *ngIf="_formControl && _formControl.touched && _formControl.hasError('typeMismatch')">
+            {{ t('Form.Validation.typeMismatch') }}
+        </mat-error>
+
+        <!-- tooShort -->
+        <mat-error *ngIf="_formControl && _formControl.touched && _formControl.hasError('tooShort')">
+            {{ t('Form.Validation.tooShort') }}
+        </mat-error>
+
+        <!-- tooLong -->
+        <mat-error *ngIf="_formControl && _formControl.touched && _formControl.hasError('tooLong')">
+            {{ t('Form.Validation.tooLong') }}
+        </mat-error>
+
+        <!-- rangeUnderflow -->
+        <mat-error *ngIf="_formControl && _formControl.touched && _formControl.hasError('rangeUnderflow')">
+            {{ t('Form.Validation.rangeUnderflow') }}
+        </mat-error>
+
+        <!-- rangeOverflow -->
+        <mat-error *ngIf="_formControl && _formControl.touched && _formControl.hasError('rangeOverflow')">
+            {{ t('Form.Validation.rangeOverflow') }}
+        </mat-error>
+
+        <!-- stepMismatch -->
+        <mat-error *ngIf="_formControl && _formControl.touched && _formControl.hasError('stepMismatch')">
+            {{ t('Form.Validation.stepMismatch') }}
+        </mat-error>
+
+        <!-- valueMissing -->
+        <mat-error *ngIf="_formControl && _formControl.touched && _formControl.hasError('valueMissing')">
+            {{ t('Form.Validation.valueMissing') }}
+        </mat-error>
+
+        <!-- badInput -->
+        <mat-error *ngIf="_formControl && _formControl.touched && _formControl.hasError('badInput')">
+            {{ t('Form.Validation.badInput') }}
+        </mat-error>
+
+        <!-- matDatepickerParse -->
+        <mat-error *ngIf="_formControl && _formControl.touched && _formControl.hasError('matDatepickerParse')">
+            {{ t('Form.Validation.matDatepickerParse') }}
+        </mat-error>
+
+        <!-- matDatepickerInvalid -->
+        <mat-error *ngIf="_formControl && _formControl.touched && _formControl.hasError('matDatepickerInvalid')">
+            {{ t('Form.Validation.matDatepickerInvalid') }}
+        </mat-error>
+
+        <!-- matDatepickerMin -->
+        <mat-error *ngIf="_formControl && _formControl.touched && _formControl.hasError('matDatepickerMin')">
+            {{ t('Form.Validation.matDatepickerMin', { min: _formControl.getError('matDatepickerMin')?.min }) }}
+        </mat-error>
+
+        <!-- matDatepickerMax -->
+        <mat-error *ngIf="_formControl && _formControl.touched && _formControl.hasError('matDatepickerMax')">
+            {{ t('Form.Validation.matDatepickerMax', { max: _formControl.getError('matDatepickerMax')?.max }) }}
+        </mat-error>
+
+        <!-- passwordMismatch -->
+        <mat-error *ngIf="_formControl && _formControl.touched && _formControl.hasError('passwordMismatch')">
+            {{ t('Form.Validation.passwordMismatch') }}
+        </mat-error>
+
+        <!-- passwordsMatch -->
+        <mat-error *ngIf="_formControl && _formControl.touched && _formControl.hasError('passwordsMatch')">
+            {{ t('Form.Validation.passwordsMatch') }}
+        </mat-error>
+
+        <!-- passwordsMismatch -->
+        <mat-error *ngIf="_formControl && _formControl.touched && _formControl.hasError('passwordsMismatch')">
+            {{ t('Form.Validation.passwordsMismatch') }}
+        </mat-error>
+
+        <!-- invalidNationalCode -->
+        <mat-error *ngIf="_formControl && _formControl.touched && _formControl.hasError('invalidNationalCode')">
+            {{ t('Form.Validation.invalidNationalCode') }}
+        </mat-error>
+
+    </mat-form-field>
+</ng-container>

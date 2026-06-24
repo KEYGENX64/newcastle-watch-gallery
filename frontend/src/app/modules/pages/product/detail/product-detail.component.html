@@ -1,0 +1,86 @@
+<div class="product-detail-container w-full rounded-xl" *ngIf="product">
+    <div class="product-detail-grid">
+
+        <div class="product-detail__top-bar">
+            <button type="button" class="product-detail__back-btn" (click)="onBack()">
+                <mat-icon class="icon-size-5" [svgIcon]="'heroicons_solid:arrow-right'"></mat-icon>
+                <span>بازگشت به لیست محصولات</span>
+            </button>
+        </div>
+
+        <div class="product-detail__media">
+            <div class="product-detail__image-wrapper">
+                <img class="product-detail__image" [src]="product.image || 'assets/images/no-image.png'"
+                    [alt]="product.name">
+                <div class="product-detail__image-overlay"></div>
+            </div>
+        </div>
+
+        <div class="product-detail__info">
+            <div class="product-detail__header">
+                <span class="product-detail__category" *ngIf="product.category">
+                    <mat-icon class="icon-size-4" [svgIcon]="'heroicons_solid:folder'"></mat-icon>
+                    {{ product.category.name || product.category }}
+                </span>
+                <h1 class="product-detail__title">{{ product.name }}</h1>
+                <p class="product-detail__sku" *ngIf="product.sku">کد محصول: {{ product.sku }}</p>
+            </div>
+
+            <div class="product-detail__pricing-stock">
+                <div *ngIf="product" class="product-detail__price-box">
+                    <span *ngIf="hasDiscount" class="product-detail__price-old">
+                        {{ formatPrice(product.price) }}
+                    </span>
+
+                    <strong class="product-detail__price-final">
+                        {{ formatPrice(finalPrice) }}
+                    </strong>
+                </div>
+
+                <div class="product-detail__stock" [class.product-detail__stock--danger]="isOutOfStock">
+                    <mat-icon class="icon-size-5" [svgIcon]="'heroicons_solid:cube'"></mat-icon>
+                    <span>{{ stockLabel }}</span>
+                </div>
+            </div>
+            <div class="product-detail__specs">
+                <h3>مشخصات فنی</h3>
+                <div class="specs-grid">
+                    <div class="spec-item">
+                        <span class="spec-label">برند</span>
+                        <span class="spec-value">{{ product.brand }}</span>
+                    </div>
+                    <div class="spec-item" *ngIf="genderLabel">
+                        <span class="spec-label">جنسیت</span>
+                        <span class="spec-value">{{ genderLabel }}</span>
+                    </div>
+                    <div class="spec-item" *ngIf="movementTypeLabel">
+                        <span class="spec-label">نوع موتور</span>
+                        <span class="spec-value">{{ movementTypeLabel }}</span>
+                    </div>
+                    <div class="spec-item" *ngIf="product.created_at">
+                        <span class="spec-label">تاریخ ثبت</span>
+                        <span class="spec-value">{{ product.created_at | jalali:'YYYY/MM/DD' }}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-detail__description" *ngIf="product.description">
+                <h3>توضیحات محصول</h3>
+                <p>{{ product.description }}</p>
+            </div>
+
+
+
+            <div class="product-detail__actions" *ngIf="isAdmin">
+                <button type="button" class="btn-admin btn-admin--edit" (click)="onEdit()">
+                    <mat-icon class="icon-size-4" [svgIcon]="'mat_solid:edit'"></mat-icon>
+                    <span>ویرایش محصول</span>
+                </button>
+                <button type="button" class="btn-admin btn-admin--delete" (click)="onRemove()">
+                    <mat-icon class="icon-size-4" [svgIcon]="'mat_solid:delete'"></mat-icon>
+                    <span>حذف محصول</span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+</div>
